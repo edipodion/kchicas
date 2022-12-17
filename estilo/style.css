@@ -1,0 +1,144 @@
+:root {
+  --font_principal: "Montserrat", sans-serif;
+  --font_secundaria: "Oswald", sans-serif;
+  --cor_principal: #ffffff;
+  --cor_secundaria: #000000;
+  --fonte1_tamanho: 2.5em;
+  --fonte2_tamanho: 1.5em;
+}
+
+body {
+  background: rgb(174, 235, 238);
+  background: linear-gradient(
+    30deg,
+    rgba(174, 235, 238, 1) 16%,
+    rgba(233, 148, 228, 1) 80%
+  );
+  background-repeat: no-repeat;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2rem;
+}
+
+.logotopo {
+  width: 200px;
+  margin-bottom: 12px;
+}
+
+.navegacao__menu {
+  display: flex;
+}
+
+.navegacao__item {
+  margin-right: 0;
+}
+
+.navegacao__link {
+  color: var(--cor_principal);
+  margin-right: 1.25rem;
+  text-decoration: none;
+  font-family: var(--font_principal);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navegacao__link:hover {
+  text-decoration: underline;
+  font-size: 40px;
+}
+
+.navegacao__link.ativo {
+  color: var(--cor_secundaria);
+}
+
+/* Redes sociais */
+
+.minhas_redessociais {
+  align-items: center;
+  text-align: center;
+}
+
+.titulo_redesocial {
+  font-size: var(--fonte1_tamanho);
+  font-family: var(--font_secundaria);
+  color: var(--cor_principal);
+  text-shadow: 2px 2px 1px #000000;
+}
+
+.redes__sociais {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.redes__sociais__lista {
+  display: flex;
+  margin: 1em;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 2px 2px 1px #000000;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    rgba(174, 235, 238, 1) 16%,
+    rgba(233, 148, 228, 1) 80%
+  );
+}
+
+.redesocial__logo {
+  width: 45px;
+}
+
+.redes__sociais__item {
+  font-size: var(--fonte2_tamanho);
+  font-family: var(--font_secundaria);
+  color: var(--cor_principal);
+}
+
+footer {
+  margin: 1em auto;
+  text-align: center;
+  font-family: var(--font_secundaria);
+  font-weight: 500;
+  font-size: 1em;
+}
+
+footer img {
+  width: 60px;
+}
+
+/* Responsive */
+@media (max-width: 790px) {
+  .navegacao {
+    display: flex;
+    flex-direction: column;
+  }
+  .redes__sociais {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .redes__sociais__lista {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .navegacao__item {
+    text-shadow: 2px 2px 1px #928d8d;
+  }
+  .navegacao__menu {
+    margin-top: 10%;
+  }
+  .redesocial__logo {
+    width: 70px;
+  }
+  .redes__sociais__item {
+    font-size: 2em;
+  }
+}
